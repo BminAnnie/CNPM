@@ -4,7 +4,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div className="layout-page shadowHeader">
-            <div className="h-[100px] flex justify-between items-center">
+            <div className="h-[80px] flex justify-between items-center">
                 <Image src="/icons/header_pageHome.svg" width={60} height={60} alt="" />
                 <div className="flex w-[700px] justify-between text-16-20-500">
                     <p>Home</p>

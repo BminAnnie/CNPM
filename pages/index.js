@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import BannerBottom from '../components/PageHome/BannerBottom';
 import BannerTop from '../components/PageHome/BannerTop';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 
             <main>
                 <BannerTop />
+                <BannerBottom />
             </main>
         </div>
     );
