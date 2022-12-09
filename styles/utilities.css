@@ -1,0 +1,22 @@
+@tailwind utilities;
+
+@layer utilities {
+    .layout-page {
+        @apply px-[20px] tablet:px-[40px] laptop:px-[100px]  max-w-[1700px] w-full;
+    }
+    .text-48-64-900 {
+        @apply text-[48px] leading-[64px] font-[900];
+    }
+    .text-20-24-400 {
+        @apply text-[20px] leading-[24px] font-[400];
+    }
+    .text-16-20-500 {
+        @apply text-[16px] leading-[20px] font-[500];
+    }
+    .text-16-20-600 {
+        @apply text-[16px] leading-[20px] font-[600];
+    }
+    .text-16-20-700 {
+        @apply text-[16px] leading-[20px] font-[700];
+    }
+}
