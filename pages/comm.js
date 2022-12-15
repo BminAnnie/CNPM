@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import Message from '../components/comm/Message';
 import User from '../components/comm/User';
 export default function Home() {
+    const [conversationId, setConversationId] = useState(1);
     return (
         <div>
             <Head>
@@ -11,13 +13,15 @@ export default function Home() {
             </Head>
 
             <main>
-                <h1 className="font-semibold text-5xl text-center text-gray-500 my-5">Message</h1>
-                <div className="grid grid-cols-12 gap-4">
-                    <div className="col-start-1 col-end-4">
-                        <User />
+                <div className="flex h-[calc(100vh-80px)] bg-white shadowHeader">
+                    <div className="w-[300px]">
+                        <User
+                            conversationId={conversationId}
+                            setConversationId={setConversationId}
+                        />
                     </div>
-                    <div className="col-span-9">
-                        <Message />
+                    <div className="flex-1">
+                        <Message conversationId={conversationId} />
                     </div>
                 </div>
             </main>
