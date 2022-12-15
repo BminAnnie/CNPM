@@ -18,10 +18,10 @@ const BannerBottom = () => {
                         professional waste management services
                     </p>
                     <button className="flex text-black items-center text-20-24-500  px-[15px] py-[8px] rounded-md mt-[40px] bg-white ">
-                        Learn More <GrLinkNext className="mx-3 text-[16px]" />
-                        Learn More <GrLinkNext className="mx-3 text-[16px]" />
-                        Learn More <GrLinkNext className="mx-3 text-[16px]" />
-                        Learn More <GrLinkNext className="mx-3 text-[16px]" />
+                        Login <GrLinkNext className="mx-3 text-[16px]" />
+                        Get notification <GrLinkNext className="mx-3 text-[16px]" />
+                        View task <GrLinkNext className="mx-3 text-[16px]" />
+                        Check in / check out
                     </button>
                 </div>
             </div>
