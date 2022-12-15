@@ -6,7 +6,11 @@ const User = ({ conversationId, setConversationId }) => {
         <div className="h-[calc(100vh-80px)] overflow-y-scroll hide-scroll cursor-pointer">
             {conversations.map((conversation) => (
                 <div
-                    className={`${conversation.conversationId == conversationId && 'bg-lime-200'}`}
+                    className={`${
+                        conversation.conversationId == conversationId
+                            ? 'bg-lime-200'
+                            : 'hover:bg-lime-50'
+                    }`}
                     key={conversation.conversationId}
                     onClick={() => setConversationId(conversation.conversationId)}
                 >

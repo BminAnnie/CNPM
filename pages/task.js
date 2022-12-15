@@ -32,8 +32,8 @@ const Task = () => {
                     {pages.map((pagez, index) => (
                         <>
                             <div
-                                className={`text-center py-[20px] text-16-20-500 ${
-                                    page == index && 'bg-lime-300'
+                                className={`text-center py-[20px] text-16-20-500  ${
+                                    page == index ? 'bg-lime-300' : 'hover:bg-lime-50'
                                 } `}
                                 onClick={() => setPage(index)}
                             >
